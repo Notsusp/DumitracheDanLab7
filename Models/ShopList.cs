@@ -1,7 +1,7 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using SQLite;
 
 namespace DumitracheDanLab7.Models
 {
@@ -12,5 +12,7 @@ namespace DumitracheDanLab7.Models
         [MaxLength(250), Unique]
         public string Description { get; set; }
         public DateTime Date { get; set; }
+
+        public int ShopID { get; set; }
     }
 }
